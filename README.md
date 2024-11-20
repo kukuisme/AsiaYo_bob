@@ -46,7 +46,7 @@ LIMIT 10;
   - `Validator` 作為策略模式的一部分，負責對不同的欄位（如 `name`、`price`、`currency`）應用不同的驗證策略。
   - 這使得每個驗證邏輯的實現可以獨立，並且在未來可以根據需求更換或擴展驗證邏輯。
 
-- **Chain of Responsibility Pattern)**：
+- **Chain of Responsibility Pattern**：
   - 每個欄位的驗證邏輯獨立運作，並按照順序執行，當其中某個欄位驗證失敗時，會立刻返回錯誤並終止後續處理。
   - 這種設計讓不同的驗證規則解耦，並可以很容易地添加新的驗證步驟。
 
