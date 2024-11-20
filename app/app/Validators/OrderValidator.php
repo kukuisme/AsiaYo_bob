@@ -12,9 +12,9 @@ class OrderValidator
         $rules = [
             // 'name' => ['required', 'regex:/^[A-Z][a-z]*(?: [A-Z][a-z]*)*$/'],
             'name' => ['required', 
-            'regex:/^[A-Za-z\s]*$/', // 檢查是否只包含字母與空格
+            'regex:/^[A-Za-z\s]*$/', //檢查是否只包含字母與空格
             function ($attribute, $value, $fail) {
-                // 檢查第一個字母是否為大寫
+                //檢查第一個字母是否為大寫
                 if (strlen($value) > 0 && ctype_lower($value[0])) {
                     $fail('400 - Name is not capitalized.');
                 }

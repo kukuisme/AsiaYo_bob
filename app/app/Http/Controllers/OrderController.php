@@ -8,6 +8,7 @@ use App\Services\OrderService;
 class OrderController extends Controller
 {
     protected $orderService;
+
     public function __construct(OrderService $orderService)
     {
         $this->orderService = $orderService;
@@ -18,7 +19,8 @@ class OrderController extends Controller
         $result = $this->orderService->processOrder($request->all());
         
         //根據結果給適當的回應
-        if ($result['status'] === 'error') {
+        if ($result['status'] === 'error') 
+        {
             return response()->json([
                 'errors' => $result['errors']
             ], 400);
