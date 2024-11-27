@@ -61,5 +61,7 @@ LIMIT 10;
 3. **currency**：
    - 必須為 `TWD` 或 `USD` 其中之一。
    - 若 `currency` 格式無效，會返回錯誤訊息。
+
+   
 <img width="777" alt="截圖 2024-11-21 凌晨1 33 18" src="https://github.com/user-attachments/assets/e16d3cc1-6ae4-422d-8152-86bae3e0c0d3">
      

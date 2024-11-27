@@ -5,6 +5,6 @@ use App\Http\Controllers\OrderController;
 
 Route::post('/orders', [OrderController::class, 'store']);
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
