@@ -40,6 +40,15 @@ LIMIT 10;
    - 如果資料驗證成功，`OrderService` 會進行金額計算，並將結果返回給 `OrderController`，最終返回給用戶端。
    - 若驗證失敗，會將錯誤訊息回傳，提示用戶哪些欄位未通過驗證。
 
+
+------
+## 使用流程
+```
+docker-compose up -d
+```
+http://localhost:8080/orders
+
+
 ## 設計模式
 
 - **Strategy Pattern**：
